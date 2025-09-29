@@ -1,0 +1,261 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffeef8 0%, #f0e6ff 50%, #e6f3ff 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: #2d1b69;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Georgia', serif;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.hearts {
+  font-size: 2rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.searchSection {
+  background: white;
+  border-radius: 20px;
+  padding: 2.5rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.searchTitle {
+  font-size: 2rem;
+  color: #2d1b69;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.searchDescription {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.searchForm {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.searchInput {
+  flex: 1;
+  min-width: 250px;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  border: 2px solid #e1e5e9;
+  border-radius: 50px;
+  outline: none;
+  transition: all 0.3s ease;
+  background: #fafbfc;
+}
+
+.searchInput:focus {
+  border-color: #2d1b69;
+  box-shadow: 0 0 0 3px rgba(45, 27, 105, 0.1);
+  background: white;
+}
+
+.searchButton {
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #2d1b69 0%, #4a3f8a 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.searchButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(45, 27, 105, 0.3);
+}
+
+.results {
+  margin-top: 2rem;
+}
+
+.successResults {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #e8f5e8 0%, #f0fff0 100%);
+  border-radius: 15px;
+  border: 2px solid #4caf50;
+}
+
+.successIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.successTitle {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.successMessage {
+  font-size: 1.2rem;
+  color: #388e3c;
+  margin-bottom: 1.5rem;
+}
+
+.guestCard {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #4caf50;
+}
+
+.guestName {
+  font-size: 1.4rem;
+  color: #2d1b69;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.guestDetails {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.guestDetails p {
+  margin: 0;
+  color: #666;
+  font-size: 1rem;
+}
+
+.welcomeText {
+  font-size: 1.1rem;
+  color: #2e7d32;
+  margin-top: 1.5rem;
+  font-weight: 500;
+}
+
+.errorResults {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #ffeaea 0%, #fff0f0 100%);
+  border-radius: 15px;
+  border: 2px solid #f44336;
+}
+
+.errorIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.errorTitle {
+  font-size: 2rem;
+  color: #c62828;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.errorMessage {
+  font-size: 1.2rem;
+  color: #d32f2f;
+  margin-bottom: 1rem;
+}
+
+.errorHelp {
+  font-size: 1rem;
+  color: #666;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.infoCard {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #2d1b69;
+}
+
+.infoCard h3 {
+  font-size: 1.5rem;
+  color: #2d1b69;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.infoCard p {
+  margin-bottom: 0.5rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.infoCard p strong {
+  color: #2d1b69;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .searchForm {
+    flex-direction: column;
+  }
+  
+  .searchInput,
+  .searchButton {
+    width: 100%;
+  }
+  
+  .guestDetails {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .info {
+    grid-template-columns: 1fr;
+  }
+}
