@@ -31,6 +31,9 @@ export default function Home() {
           <h1 className={styles.title}>
             Destiny & Goodluck's Wedding
           </h1>
+          <h2 className={styles.title}>
+            GooDee2025
+          </h2>
           <p className={styles.subtitle}>
             October 25th, 2025 • Exquis Event Center
           </p>
